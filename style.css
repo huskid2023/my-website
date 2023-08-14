@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,600;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body{
+    background-color: rgb(0 10 31/1);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    height: 70px;
+    padding: 0 30px;
+    font-weight: 500;
+    transition: ease-in 1s;
+
+}
+.logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.active{
+    color: white;
+}
+
+.emoji:hover{
+    transform: rotate(360deg);
+    display: inline-block;
+    transition: all 0.9s;
+}
+
+.emoji{
+    font-size: 25px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* .hamburger{
+    background-color: red;
+    height: 30px;
+    width: 5%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.line1{
+    background-color: blue;
+    height: 10px;
+    width: 100%;
+}
+
+
+.line2{
+    background-color: green;
+    height: 10px;
+    width: 100%;
+} */
+.links{
+    color: #8c8c8c;
+}
+
+
+.visible {
+    visibility: visible;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+.burger {
+    transition: opacity .3s ease;
+    border: 0;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: none;
+}
+[role=button], button {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.burger svg {
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transition: opacity .3s ease,transform .3s ease;
+}
+.text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246/var(--tw-text-opacity));
+}
+.w-5 {
+    width: 1.25rem;
+}
+.h-5 {
+    height: 1.25rem;
+}
+.absolute {
+    position: absolute;
+}
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+    vertical-align: middle;
+}
+
+
+.burger svg[data-hide=true] {
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0);
+}
+.burger svg {
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transition: opacity .3s ease,transform .3s ease;
+}
+.text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246/var(--tw-text-opacity));
+}
+.w-5 {
+    width: 1.25rem;
+}
+.h-5 {
+    height: 1.25rem;
+}
+.absolute {
+    position: absolute;
+}
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+    vertical-align: middle;
+}
+
+.container-fluid{
+  max-width: 1200px;
+  color: white;  
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  position: relative;
+  transition: ease-in-out 1s;
+  
+}
+.container-fluid h5{
+    color: white;
+}
+.span1{
+    color: blueviolet;
+}
+.span2{
+    color: darkslategrey;
+}
+.span3{
+    color: green;
+}
+
+.skills-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    height: 70px;
+    /* background-color: red; */
+    font-size: 30px;
+}
+
+.project_visible{
+    background-color: red;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20px;
+    gap: 20px;
+}
+.card{
+background-color: orange;
+padding: 20px;
+}
+
+.card2{
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+.card3{
+    background-color: green;
+    padding: 20px;
+}
+
+.card-img{
+background-color: white;
+width: 100%;
+height: 200px;
+padding: 10px;
+background-image: url(./assets/img/wp5215665.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.some_of_project h1{
+    margin: 20px;
+    color: white;
+}
+
+
+
+@media screen and (max-width:892px){
+   .nav-menu{
+    display: none;
+    position: absolute;
+    gap: 20px;
+    flex-direction: column;
+    top: 80px;                        
+     /* background-color: #e5e7eb;   */
+     width: 95%;
+     align-items: flex-start;               
+   }
+   .nav-menu li{
+    border-bottom:1px solid #e5e7eb ;
+    width: 100%;
+    line-height: 35px;
+    color: white;
+   }
+   .nav-menu a{
+    color: white;
+    font-weight: bold;
+   }
+
+   .burger{
+    display: block;
+   }
+   .container-fluid{
+    width: 100%;
+   }
+
+   .project_visible{
+    background-color: blue;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+} 
+}
+    
+
